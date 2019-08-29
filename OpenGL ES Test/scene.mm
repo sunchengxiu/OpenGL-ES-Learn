@@ -7,7 +7,7 @@
 //
 
 
-
+#import "scene.h"
 void Init(){
     
 }
@@ -17,6 +17,7 @@ void SetViewSize(int width , int height){
 }
 
 void Draw(){
-    
+    glClearColor(0.1f,0.4f,0.7f,1.0f);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
