@@ -19,6 +19,7 @@
 		E8544FBC23180125000996D8 /* SCXGLKViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E8544FBB23180125000996D8 /* SCXGLKViewController.mm */; };
 		E8544FC023180722000996D8 /* ggl.mm in Sources */ = {isa = PBXBuildFile; fileRef = E8544FBF23180722000996D8 /* ggl.mm */; };
 		E85455D82318086A000996D8 /* glm in Resources */ = {isa = PBXBuildFile; fileRef = E85455D72318086A000996D8 /* glm */; };
+		E85455DE231811B7000996D8 /* Utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = E85455DD231811B7000996D8 /* Utils.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		E8544FBE23180722000996D8 /* ggl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ggl.h; sourceTree = "<group>"; };
 		E8544FBF23180722000996D8 /* ggl.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ggl.mm; sourceTree = "<group>"; };
 		E85455D72318086A000996D8 /* glm */ = {isa = PBXFileReference; lastKnownFileType = folder; name = glm; path = "OpenGL ES Test/glm"; sourceTree = "<group>"; };
+		E85455DC231811B7000996D8 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		E85455DD231811B7000996D8 /* Utils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Utils.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				E8544FBB23180125000996D8 /* SCXGLKViewController.mm */,
 				E8544FB72317FCA1000996D8 /* scene.h */,
 				E8544FB82317FCA1000996D8 /* scene.mm */,
+				E85455DC231811B7000996D8 /* Utils.h */,
+				E85455DD231811B7000996D8 /* Utils.mm */,
 				E8544FBE23180722000996D8 /* ggl.h */,
 				E8544FBF23180722000996D8 /* ggl.mm */,
 				E8544F872317F8E1000996D8 /* Main.storyboard */,
@@ -291,6 +296,7 @@
 				E8544FC023180722000996D8 /* ggl.mm in Sources */,
 				E8544FB92317FCA1000996D8 /* scene.mm in Sources */,
 				E8544F912317F8E3000996D8 /* main.m in Sources */,
+				E85455DE231811B7000996D8 /* Utils.mm in Sources */,
 				E8544FBC23180125000996D8 /* SCXGLKViewController.mm in Sources */,
 				E8544F832317F8E1000996D8 /* AppDelegate.m in Sources */,
 			);

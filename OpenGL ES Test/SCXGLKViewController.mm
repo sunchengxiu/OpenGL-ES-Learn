@@ -9,6 +9,23 @@
 #import "SCXGLKViewController.h"
 #import <GLKit/GLKit.h>
 #import "scene.h"
+#import "Utils.h"
+unsigned char * LoadFileContent(const char * fileName , int &fileSize){
+    NSString *nsFileName = [NSString stringWithUTF8String:fileName];
+    unsigned char *fileContent = nil;
+    fileSize = 0;
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:nsFileName ofType:nil];
+    NSData *data = [NSData dataWithContentsOfFile:filePath];
+    fileSize = (unsigned)[data length];
+    if ([data length]) {
+        fileContent = new unsigned char[fileSize + 1];
+        memcpy(fileContent, [data bytes], fileSize);
+        fileContent[fileSize + 1] = '\0';
+    }
+    return fileContent;
+}
+
+
 @interface SCXGLKViewController ()
 /**
  context
@@ -29,7 +46,6 @@
     [EAGLContext setCurrentContext:self.context];
     Init();
     SetViewSize([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
-    
 }
 -(void)glkView:(GLKView *)view drawInRect:(CGRect)rect{
     Draw();
