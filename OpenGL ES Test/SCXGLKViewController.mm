@@ -8,6 +8,7 @@
 
 #import "SCXGLKViewController.h"
 #import <GLKit/GLKit.h>
+#import "scene.h"
 @interface SCXGLKViewController ()
 /**
  context
@@ -26,10 +27,12 @@
     view.context = self.context;
     view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
     [EAGLContext setCurrentContext:self.context];
+    Init();
+    SetViewSize([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     
 }
 -(void)glkView:(GLKView *)view drawInRect:(CGRect)rect{
-    
+    Draw();
 }
 
 @end

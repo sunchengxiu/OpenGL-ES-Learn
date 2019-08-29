@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "ggl.h"
 
-NS_ASSUME_NONNULL_BEGIN
+void Init();
 
-@interface scene : NSObject
+void SetViewSize(int width , int height);
 
-@end
+void Draw();
 
-NS_ASSUME_NONNULL_END
+

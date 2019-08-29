@@ -6,8 +6,17 @@
 //  Copyright © 2019 孙承秀. All rights reserved.
 //
 
-#import "scene.h"
 
-@implementation scene
 
-@end
+void Init(){
+    
+}
+
+void SetViewSize(int width , int height){
+    
+}
+
+void Draw(){
+    
+}
+
